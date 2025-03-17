@@ -1,0 +1,165 @@
+.F-container {
+  width: 90%;
+  margin: auto;
+}
+
+.featured-art-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 71px;
+}
+.featured-art-header > .featured-art-header-text > div {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: -4%;
+  color: #121212;
+  width: 719px;
+  height: 119px;
+}
+
+.featured-art-header-explore-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.featured-art-header-explore-link > div {
+  /* width: 171px;
+    height: 44px;*/
+  padding-right: 10px;
+  color: #121212;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -1%;
+}
+.featured-art-header-explore-link::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  background-color: #121212;
+  height: 1px;
+  width: 170px;
+  left: 0px;
+  border-radius: 5px;
+}
+.artworks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.artworks > .art > img {
+  width: 100%;
+  height: 85%;
+}
+
+.artworks > .art {
+  /* border: 2px solid red; */
+  /* box-shadow: 0px 0px 6px #bbb; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+/* 
+/* .artworks > .art-1 {
+  width: 387px;
+  height: 521px;
+   top: 260px;
+    left: 120px;
+
+}
+
+.artworks > .art-2 {
+  width: 387px;
+  height: 591px;
+   top: 260px;
+left: 527px; 
+  gap: 20px;
+}
+
+.artworks > .art-3 {
+  width: 387px;
+  height: 478px;
+  top: 260px;
+left: 934px; 
+  gap: 20px;
+}
+
+.artworks > .art-4 {
+  width: 794px;
+  height: 820px;
+   top: 973px;
+left: 120px; 
+  gap: 20px;
+}
+
+.artworks > .art-5 {
+  width: 387px;
+  height: 591px;
+  /* top: 973px;
+left: 934px; 
+  gap: 20px;
+} */
+
+.art-title-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.art-name {
+  font-size: 1.25rem;
+  font-family: Helvetica;
+  font-weight: 400;
+  line-height: 124%;
+  letter-spacing: -1%;
+}
+.art-price {
+  font-size: 1.25rem;
+  font-family: Helvetica;
+  font-weight: 700;
+  line-height: 124%;
+  letter-spacing: -1%;
+}
+
+.art-desc {
+  color: #12121299;
+}
+
+.Why {
+  padding: 87px 146px 151px 0px;
+  /* height: 543px; */
+  /* border: 1px solid red; */
+  width: 1177px;
+  height: 305px;
+}
+
+.Why > .q-header {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 124%;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+
+.Why > .q-desc {
+  width: 1174px;
+  height: 240px;
+  font-size: 3rem;
+  position: relative;
+
+line-height: 124%;
+letter-spacing: -4%;
+
+}
+
+.Why > .q-desc > img {
+  width: 153px;
+  height: 52px;
+  /* position: absolute; */
+  top: 20px;
+}

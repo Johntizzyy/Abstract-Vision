@@ -1,0 +1,123 @@
+.custom-container {
+  padding: 90px 120px;
+  color: #121212;
+}
+
+/*.custom-header {
+   display: flex;
+  flex-direction: column; 
+}*/
+.custom-header > span {
+  width: 1200px;
+  height: 119px;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 124%;
+  letter-spacing: -4%;
+  width: 302px;
+  /* height: 40px; */
+  padding-bottom: 400px;
+}
+
+.custom-header > div {
+  font-size: 1.25rem;
+  line-height: 124%;
+  letter-spacing: -1%;
+  width: 302px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin-top: 30px;
+  margin-left: 898px;
+  color: #121212CC;
+}
+
+.custom-header > div > div {
+  /* width: 269px; */
+  /* height: 44px; */
+  gap: 10px;
+  /* border-bottom-width: 1px; */
+  /* background-color: #121212; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.custom-header > div > div::after {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 1px;
+  /* bottom:-1px; */
+  top: 50px;
+  background-color: #121212;
+}
+
+.custom-header > div > div > div {
+  font-size: 1rem;
+  padding-right: 10px;
+  /* align-self: flex-end; */
+}
+.custom-header > div > div > img {
+  width: 24px;
+  height: 24px;
+}
+
+.gallery {
+  margin-top: 40px;
+  width: 1200px;
+  height: 426px;
+  /* gap: 40px; */
+  display: flex;
+}
+
+.gallery > div:nth-child(1) {
+  width: 437px;
+  height: 426px;
+}
+
+.gallery > div:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+}
+.gallery > div:nth-child(2) {
+  padding: 66px 0;
+}
+
+.gallery > div:nth-child(2) .handcraft {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* border-bottom: 0.5px solid #cccccc; */
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  /* padding: 66px 0; */
+  position: relative;
+}
+
+.gallery > div:nth-child(2) .handcraft::after{
+position: absolute;
+
+content: "";
+width: 525px;
+height: 1px;
+background: #ccc;
+bottom: 0;
+right: 0;
+}
+
+.gallery > div:nth-child(2) .handcraft >img {
+  width: 111px;
+  height: 58px;
+  padding-right: 16px;
+}
+
+.gallery > div:nth-child(2) .handcraft span {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 124%;
+  letter-spacing: -1%;
+}

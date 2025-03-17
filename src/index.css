@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+
+  background-color:#F8F8F8;
+
+  /* overflow: hidden; */
+}
+
+.Featured-container{
+  width: 1440px;
+  /* height: 1916px; */
+  /* top: 915px; */
+}
+
+.CustomArtwork-container{
+  height: 905px;
+}
