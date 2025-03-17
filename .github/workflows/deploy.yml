@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # Prevents GitHub token conflicts
 
       - name: Install Node.js
         uses: actions/setup-node@v3
@@ -29,10 +31,14 @@ jobs:
       - name: Build Project
         run: npm run build
 
+      - name: Configure Git User
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  
-          folder: dist  
+          folder: dist  # Ensure this matches your build output folder
           token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Use stored PAT
-
