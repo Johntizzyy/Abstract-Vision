@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import art from "../../assets/home-art.png";
-import logo from "../../assets/vector.png";
+import logo from "../../assets/Vector.png";
 import phone from "../../assets/phone.png";
 import cart from "../../assets/shopping-bag-fill.png";
 import arrowRight from "../../assets/arrow-right-line.png";
