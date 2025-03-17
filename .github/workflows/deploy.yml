@@ -3,7 +3,12 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this if your default branch is different
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -27,5 +32,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # The branch where the site will be deployed
-          folder: dist  # The folder containing the built files (for Vite)
+          branch: gh-pages  
+          folder: dist  
+          token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Use stored PAT
+
