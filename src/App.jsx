@@ -2,7 +2,7 @@ import "./index.css";
 import Home from "./Components/Home/Home.jsx";
 import Featured from "./Components/Featured/Featured.jsx";
 import CustomArtwork from "./Components/Custom Artwork/CustomArtwork.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
+import FooterDesign from "./Components/FooterPage/FooterPage.jsx";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <div className="CustomArtwork-container">
         <CustomArtwork />
       </div>
-      <Footer/>
+      <FooterDesign/>
     </>
   );
 }
